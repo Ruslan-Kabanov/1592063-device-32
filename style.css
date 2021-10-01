@@ -1,0 +1,30 @@
+body{  /* Временные */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width:1160px;
+}
+
+.page-header{
+  background-color:#FFE17F;
+}
+
+.services{
+  background-color:#F0F0F0;
+}
+
+.mailing{
+  background-color:#F0F0F0;
+}
+
+.main-footer{
+  background-color:#444444;
+}
+
+.product-filters{
+  background-color:#EBEBEB;
+}
+
+.product-cards-header{
+  background-color: #DCDCDC;
+}
