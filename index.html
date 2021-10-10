@@ -9,7 +9,8 @@
 </head>
 <body>
   <header class="page-header"> <!--Шапка-->
-    <a>
+    <div class="container">
+    <a class="header-logo">
       <img src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
     </a>
     <ul class="user-nav-list">
@@ -65,22 +66,26 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main> <!-- Главное содержимое -->
     <h1 class="visually-hidden">Магазин гаджетов device</h1>
     <section class="slider"> <!-- Слайдер -->
       <h2 class="visually-hidden">Слайдер</h2>
-      <div class="slider-1">
-        <span class="slide-number">01</span>
-        <h3 class="page-title slide-title">Порхает как бабочка,<br> жалит как пчела!</h3>
-        <p class="slide_subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <img class="slider-img" src="img/slide_1.png" width="560" height="560" alt="Квадрокоптер">
+      <div class="slider-1 container">
+        <div class="slider-left-column">
+          <img class="slider-img" src="img/slide_1.png" width="560" height="560" alt="Квадрокоптер">
         <button class="slider-button button-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="slider-button button-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
         </button>
+        </div>
+        <div class="slider-right-column">
+          <span class="slide-number">01</span>
+        <h3 class="page-title slide-title">Порхает как бабочка,<br> жалит как пчела!</h3>
+        <p class="slide_subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <a class="button slide-button" href="#">Подробнее</a>
         <ol class="slider-pagination-list">
           <li class="slider-pagination-item">
@@ -103,6 +108,7 @@
             <dt class="slider-product-descr-term">Радиус поражения</dt>
             <dd class="slider-product-descr-data">50 м</dd>
         </dl>
+        </div>
       </div>
       <div class="slider-2 visually-hidden"> <!--Скрыто-->
         <span class="slide-number">02</span>
@@ -173,7 +179,7 @@
         </dl>
       </div>
     </section>
-    <section class="product-categories"> <!--Категории товаров-->
+    <section class="product-categories container"> <!--Категории товаров-->
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="product-categories-list">
         <li class="product-categories-list-item">
@@ -204,29 +210,71 @@
     </section>
     <section class="services"> <!--Услуги-->
       <h2 class="visually-hidden">Услуги</h2>
+      <div class="services-slider container">
+      <div class="services-slide-1-left-column">
       <ul>
         <li>
           <button class="button services-button services-button-current" type="button">Доставка</button>
-          <h2 class="page-title services-title">Доставка</h2>
-          <p class="services-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
-        <li class="visually-hidden"> <!--Скрыто-->
+        <li>
           <button class="button services-button" type="button">Гарантия</button>
-          <h2 class="page-title services-title">Гарантия</h2>
-          <p class="services-subtitle">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        <li class="visually-hidden"> <!--Скрыто-->
+        </li>
+        <li>
           <button class="button services-button" type="button">Кредит</button>
-          <h2 class="page-title services-title">Кредит</h2>
-          <p class="services-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка разумеется.</p>
         </li>
       </ul>
+      </div>
+      <div class="services-slide-1-right-column">
+        <h2 class="page-title services-title">Доставка</h2>
+          <p class="services-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+      </div>
+      <div class="services-slider container visually-hidden"> <!--Скрыто-->
+        <div class="services-slide-2-left-column">
+        <ul>
+          <li>
+            <button class="button services-button" type="button">Доставка</button>
+          </li>
+          <li>
+            <button class="button services-button services-button-current" type="button">Гарантия</button>
+          </li>
+          <li>
+            <button class="button services-button" type="button">Кредит</button>
+          </li>
+        </ul>
+        </div>
+        <div class="services-slide-2-right-column">
+          <h2 class="page-title services-title">Гарантия</h2>
+            <p class="services-subtitle">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+          </div>
+        </div>
+        <div class="services-slider container visually-hidden"> <!--Скрыто-->
+          <div class="services-slide-3-left-column">
+          <ul>
+            <li>
+              <button class="button services-button" type="button">Доставка</button>
+            </li>
+            <li>
+              <button class="button services-button" type="button">Гарантия</button>
+            </li>
+            <li>
+              <button class="button services-button services-button-current" type="button">Кредит</button>
+            </li>
+          </ul>
+          </div>
+          <div class="services-slide-3-right-column">
+            <h2 class="page-title services-title">Кредит</h2>
+              <p class="services-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка разумеется.
+            </div>
+          </div>
     </section>
-    <section class="about-us"> <!--О компании-->
+    <section class="about-us container"> <!--О компании-->
       <h2 class="visually-hidden">О компании</h2>
       <header class="about-us-header">
         <a class="about-us-header-link" href="">Доставим редкий товар под заказ</a>
         <span>i</span>
       </header>
+      <div class="about-us-inner">
       <div class="about-us-left-column">
         <h2 class="page-title about-us-left-column-title">О нас</h2>
         <p class="about-us-left-column-subtitle">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -253,58 +301,70 @@
         </ul>
         <a class="button contacts-button" href="#">Напишите нам</a>
       </div>
+    </div>
     </section>
     <section class="mailing"> <!--Рассылка-->
       <h2 class="visually-hidden">Подписаться на рассылку</h2>
-      <h2 class="page-title mailing-title">Подпишитесь на рассылку</h2>
-      <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-      <form action="https://echo.htmlacademy.ru/" method="POST">
+      <div class="mailing-title-section container">
+        <h2 class="page-title mailing-title">Подпишитесь на рассылку</h2>
+        <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      </div>
+      <div class="mailing-form container">
+        <form action="https://echo.htmlacademy.ru/" method="POST">
         <label class="visually-hidden" for="mailing-form">Ваш e-mail</label>
         <input class="mailing-input" type="email" placeholder="Ваш e-mail" id="mailing-form" name="subscription field">
         <button class="button mailing-button" type="submit">Подписаться</button>
       </form>
       <span class="mailing-subscribe-free">Это бесплатно</span>
+      </div>
     </section>
   </main>
     <footer class="main-footer"> <!--Подвал-->
-      <a href="index.html">
-        <img src="img/footer_logo.svg" width="145" height="36" alt="Логотип device">
-      </a>
-      <address>
-        <p class="main-footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <ul class="main-footer-list">
-        <li class="main-footer-list-item">
-          <a class="main-footer-link" href="">Доставка</a>
-        </li>
-        <li>
-          <a class="main-footer-link" href="">Гарантия</a>
-        </li>
-        <li>
-          <a class="main-footer-link" href="">Контакты</a>
-        </li>
-      </ul>
-      <ul class="social-link-list">
-        <li>
-          <a href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidde">facebook</span> <!--Скрыто-->
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/htmlacademy/">
-            <span class="visually-hidde">instagram</span> <!--Скрыто-->
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidde">twitter</span> <!--Скрыто-->
-          </a>
-        </li>
-      </ul>
-      <a class="main-footer-tel" href="tel:+7(812)8121212">Тел.: +7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/">
-        <img src="img/htmlacademy.svg" width="115" height="34" alt="htmlacademy">
-      </a>
+      <div class="main-footer-inner container">
+        <div class="main-footer-left-column">
+          <a href="index.html">
+            <img src="img/footer_logo.svg" width="145" height="36" alt="Логотип device"></a>
+              <address>
+                <p class="main-footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              </address>
+        </div>
+        <div class="main-footer-center-column">
+          <ul class="main-footer-list">
+          <li class="main-footer-list-item">
+            <a class="main-footer-link" href="">Доставка</a>
+          </li>
+          <li>
+            <a class="main-footer-link" href="">Гарантия</a>
+          </li>
+          <li>
+            <a class="main-footer-link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="social-link-list">
+          <li>
+            <a href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidde">facebook</span> <!--Скрыто-->
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidde">instagram</span> <!--Скрыто-->
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidde">twitter</span> <!--Скрыто-->
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div class="main-footer-right-column">
+        <a class="main-footer-tel" href="tel:+7(812)8121212">Тел.: +7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/">
+          <img src="img/htmlacademy.svg" width="115" height="34" alt="htmlacademy">
+        </a>
+        </div>
+      </div>
     </footer>
 </body>
 </html>
