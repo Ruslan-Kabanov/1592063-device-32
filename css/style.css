@@ -28,15 +28,16 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html{
-  width: 100%;
-}
 
 body{
   font-family: Rubik sans-serif;
@@ -44,11 +45,12 @@ body{
   line-height: 30px;
   color: #000000;
   margin: 0;
+  height: 100%;
 }
 
 
 
-.visually-hidden {
+.visually-hidden{
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -59,8 +61,10 @@ body{
 .container{
   width: 1160px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+
+
 
 .page-title{
   font-family: Raleway sans-serif;
@@ -333,7 +337,7 @@ body{
 }
 
 .main-footer-right-column{
-  width: 180px;
+  width: 200px;
 }
 .main-footer-address{
   font-size: 16px;
@@ -377,6 +381,8 @@ body{
 
 .product-filters{
   background-color:#EBEBEB;
+  width: 270px;
+  padding-left: 57px;
 }
 
 .product-filters-title, .product-cards-title{
@@ -404,10 +410,19 @@ body{
 
 /* Карточки товаров */
 
-.product-cards-header{
-  background-color: #DCDCDC;
+
+.products{
+  background-color: #EBEBEB;
+}
+.products-inner{
+  display: flex;
 }
 
+.product-cards-section{
+  background: linear-gradient(180deg, rgb(235, 235, 235) 6%, rgb(255, 255, 255) 5%);
+  width: 972px;
+  padding-left: 72px;
+}
 .product-cards-select{
   font-family: Rubik sans-serif;
   font-style: normal;
@@ -423,6 +438,10 @@ body{
   letter-spacing: -0.02em;
 }
 
+.product-cards-list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .product-cards-link{
   text-decoration: none;
   color: #000000;
