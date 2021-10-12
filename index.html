@@ -11,13 +11,13 @@
   <header class="page-header"> <!--Шапка-->
     <div class="container">
       <a class="header-logo">
-        <img src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
+        <img class="header-logo-img" src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
       </a>
       <ul class="user-nav-list">
-        <li class="user-nav-list-item">
+        <li class="user-nav-list-item user-nav-search">
           <form class="user-nav-form" action="https://echo.htmlacademy.ru/" method="GET">
             <input class="user-nav-form-input" type="text" name="search" placeholder="Поиск по сайту">
-            <button class="user-nav-form-button" type="submit">Найти</button> <!--Кнопка по умолчанию скрыта-->
+            <button class="user-nav-form-button visually-hidden" type="submit">Найти</button> <!--Кнопка по умолчанию скрыта-->
           </form>
         </li>
         <li class="user-nav-list-item">
@@ -61,7 +61,7 @@
           <li class="main-nav-list-item">
             <a class="main-nav-list-link" href="#">Гарантия</a>
           </li>
-          <li class="main-nav-list-item">
+          <li class="main-nav-list-item main-nav-list-contacts">
             <a class="main-nav-list-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -212,14 +212,14 @@
       <h2 class="visually-hidden">Услуги</h2>
       <div class="services-slider container">
       <div class="services-slide-1-left-column">
-      <ul>
-        <li>
+      <ul class="services-slide-list">
+        <li class="services-slide-list-item">
           <button class="button services-button services-button-current" type="button">Доставка</button>
         </li>
-        <li>
+        <li class="services-slide-list-item">
           <button class="button services-button" type="button">Гарантия</button>
         </li>
-        <li>
+        <li class="services-slide-list-item">
           <button class="button services-button" type="button">Кредит</button>
         </li>
       </ul>
@@ -231,14 +231,14 @@
       </div>
       <div class="services-slider container visually-hidden"> <!--Скрыто-->
         <div class="services-slide-2-left-column">
-        <ul>
-          <li>
+        <ul class="services-slide-list">
+          <li class="services-slide-list-item">
             <button class="button services-button" type="button">Доставка</button>
           </li>
-          <li>
+          <li class="services-slide-list-item">
             <button class="button services-button services-button-current" type="button">Гарантия</button>
           </li>
-          <li>
+          <li class="services-slide-list-item">
             <button class="button services-button" type="button">Кредит</button>
           </li>
         </ul>
@@ -250,14 +250,14 @@
         </div>
         <div class="services-slider container visually-hidden"> <!--Скрыто-->
           <div class="services-slide-3-left-column">
-          <ul>
-            <li>
+          <ul class="services-slide-list">
+            <li class="services-slide-list-item">
               <button class="button services-button" type="button">Доставка</button>
             </li>
-            <li>
+            <li class="services-slide-list-item">
               <button class="button services-button" type="button">Гарантия</button>
             </li>
-            <li>
+            <li class="services-slide-list-item">
               <button class="button services-button services-button-current" type="button">Кредит</button>
             </li>
           </ul>
@@ -277,8 +277,8 @@
       <div class="about-us-inner">
       <div class="about-us-left-column">
         <h2 class="page-title about-us-left-column-title">О нас</h2>
-        <p class="about-us-left-column-subtitle">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-us-left-column-subtitle">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <p class="about-us-left-column-subtitle">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
+        <p class="about-us-left-column-subtitle">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
         <ul class="transport-list" >
           <li class="transport-list-item">Меловые линии</li>
           <li class="transport-list-item">СДИК</li>
@@ -286,9 +286,9 @@
         </ul>
         <a class="button about-us-button" href="">Подробнее о нас</a>
       </div>
-      <div class="contacts"> <!--Контакты-->
+      <div class="about-us-right-column"> <!--Контакты-->
         <h2 class="page-title contacts-page-title">Контакты</h2>
-        <p class="contacts-subtitle">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
+        <p class="contacts-subtitle">Вы можете забрать товар сами, заехав в наш офис.<br> Заодно, сможете проверить работоспособность покупки.</p>
         <h3 class="address-title">Интернет-магазин «Девайс»</h3>
         <address>
           <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -307,7 +307,7 @@
       <h2 class="visually-hidden">Подписаться на рассылку</h2>
       <div class="mailing-title-section container">
         <h2 class="page-title mailing-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       </div>
       <div class="mailing-form container">
         <form action="https://echo.htmlacademy.ru/" method="POST">

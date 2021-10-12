@@ -11,13 +11,13 @@
   <header class="page-header"> <!--Шапка-->
     <div class="container">
     <a href="index.html" class="header-logo">
-      <img src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
+      <img class="header-logo-img" src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
     </a>
     <ul class="user-nav-list">
-      <li class="user-nav-list-item">
+      <li class="user-nav-list-item user-nav-search">
         <form class="user-nav-form" action="https://echo.htmlacademy.ru/" method="GET">
           <input class="user-nav-form-input" type="text" name="search" placeholder="Поиск по сайту">
-          <button class="user-nav-form-button" type="submit">Найти</button> <!--Кнопка по умолчанию скрыта-->
+          <button class="user-nav-form-button visually-hidden" type="submit">Найти</button> <!--Кнопка по умолчанию скрыта-->
         </form>
       </li>
       <li class="user-nav-list-item">
@@ -112,31 +112,31 @@
         <fieldset class="product-filters-group">
           <legend class="product-filters-group-title">Цвет</legend>
           <ul class="product-filters-checkbox-list">
-            <li>
+            <li class="product-filters-checkbox-list-item">
               <label>
                 <input type="checkbox" name="Черный" checked>
                 <span>Черный</span>
               </label>
             </li>
-            <li>
+            <li class="product-filters-checkbox-list-item">
               <label>
                 <input type="checkbox" name="Белый" checked>
                 <span>Белый</span>
               </label>
             </li>
-            <li>
+            <li class="product-filters-checkbox-list-item">
               <label>
                 <input type="checkbox" name="Синий">
                 <span>Синий</span>
               </label>
             </li>
-            <li>
+            <li class="product-filters-checkbox-list-item">
               <label>
                 <input type="checkbox" name="Красный">
                 <span>Красный</span>
               </label>
             </li>
-            <li>
+            <li class="product-filters-checkbox-list-item">
               <label>
                 <input type="checkbox" name="Розовый">
                 <span>Розовый</span>
@@ -147,13 +147,13 @@
         <fieldset class="product-filters-group">
           <legend class="product-filters-group-title">Bluetooth</legend>
           <ul class="product-filters-radio-btn-list">
-            <li>
+            <li class="product-filters-radio-btn-list-item">
               <label>
                 <input type="radio" name="presence of bluetooth" value="yes" checked>
                 <span>Есть</span>
               </label>
             </li>
-            <li>
+            <li class="product-filters-radio-btn-list-item">
               <label>
                 <input type="radio" name="presence of bluetooth" value="no">
                 <span>Нет</span>
@@ -184,28 +184,28 @@
     </header>
      <!--Карточки товаров-->
       <ul class="product-cards-list">
-        <li>
+        <li class="product-cards-list-item">
           <a class="product-cards-link" href="#">
             <img src="img/product_1.jpg" width="360" height="380" alt=""> <!--Альт не пишу, чтобы скрин ридер 2 раза не читал-->
             <h3 class="product-card-title">Любительская селфи-палка</h3>
           </a>
           <span class="product-card-price">500 ₽</span>
         </li>
-        <li>
+        <li class="product-cards-list-item">
           <a class="product-cards-link" href="">
             <img src="img/product_2.jpg" width="360" height="380" alt="">
             <h3 class="product-card-title">Профессиональная селфи-палка </h3>
           </a>
           <span class="product-card-price">1 500 ₽</span>
         </li>
-        <li>
+        <li class="product-cards-list-item">
           <a class="product-cards-link" href="#">
             <img src="img/product_3.jpg" width="360" height="380" alt="">
             <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
           </a>
           <span class="product-card-price">2 500 ₽</span>
         </li>
-        <li>
+        <li class="product-cards-list-item">
           <a class="product-cards-link" href="#">
             <img src="img/product_4.jpg" width="360" height="380" alt="">
             <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
@@ -215,26 +215,26 @@
         </li>
       </ul>
       <button class="button products-catalog-button" type="button">Загрузить еще</button>
-      <ul class="product-cards-pagination"> <!--Пагинация-->
-        <li>
+      <ul class="product-cards-pagination-list"> <!--Пагинация-->
+        <li class="product-cards-pagination-list-item">
           <a class="button product-cards-pagination-link" href="#">Назад</a>
         </li>
-        <li>
+        <li class="product-cards-pagination-list-item">
           <a class="product-cards-pagination-link-number" href="#">1</a>
         </li>
-        <li>
+        <li class="product-cards-pagination-list-item">
           <a class="product-cards-pagination-link-number" href="#">2</a>
         </li>
-        <li>
+        <li class="product-cards-pagination-list-item">
           <a class="product-cards-pagination-link-number" href="#">3</a>
         </li>
-        <li>
+        <li class="product-cards-pagination-list-item">
           <a class="product-cards-pagination-link-number" href="#">...</a>
         </li>
-        <li>
+        <li class="product-cards-pagination-list-item">
           <a class="product-cards-pagination-link-number" href="#">15</a>
         </li>
-        <li>
+        <li class="product-cards-pagination-list-item">
           <a class="button product-cards-pagination-link" href="#">вперёд</a>
         </li>
       </ul>
