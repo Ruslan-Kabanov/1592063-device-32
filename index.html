@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="page-header"> <!--Шапка-->
-    <div class="container">
+    <div class="container page-header-container">
       <a class="header-logo">
         <img class="header-logo-img" src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
       </a>
@@ -23,6 +23,9 @@
         <li class="user-nav-list-item">
           <a class="user-nav-link" href="#">Войти</a>
         </li>
+        <li class="user-nav-list-item user-nav-list-item-out"> <!--Скрыта при не активном профиле посетителя-->
+          <a class="user-nav-link user-nav-link-out" href="#">Выйти</a>
+        </li>
         <li class="user-nav-list-item">
           <a class="user-nav-link" href="#">Сравнить</a>
         </li>
@@ -33,7 +36,7 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list-item main-nav-sub-menu"> <!--Выпадающее меню-->
-            <a class="main-nav-sub-menu-link" href="#">Каталог товаров</a>
+            <a class="main-nav-list-link main-nav-sub-menu-link" href="#">Каталог товаров</a>
             <ul class="main-nav-sub-menu-list visually-hidden"> <!--Скрыто-->
               <li class="main-nav-sub-menu-item">
                 <a class="main-nav-sub-menu-link" href="#">Виртуальная реальность</a>
@@ -86,27 +89,34 @@
           <span class="slide-number">01</span>
         <h3 class="page-title slide-title">Порхает как бабочка,<br> жалит как пчела!</h3>
         <p class="slide_subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="button slide-button" href="#">Подробнее</a>
-        <ol class="slider-pagination-list">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">фото 1</span>
-            </button>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">фото 2</span>
-            </button>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">фото 3</span>
-            </button>
-          </li>
-          </ol>
-          <dl class="slider-product-descr-list">
+        <div class="slider-pagination-wrapper">
+          <a class="button slide-button" href="#">Подробнее</a>
+          <ol class="slider-pagination-list">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">фото 1</span>
+              </button>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">фото 2</span>
+              </button>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">фото 3</span>
+              </button>
+            </li>
+            </ol>
+          </div>
+        <dl class="slider-product-descr-list">
+          <div class="slider-product-descr-left-column">
             <dt class="slider-product-descr-term">Дальность полета</dt>
             <dd class="slider-product-descr-data">800 м</dd>
+          </div>
+          <div class="slider-product-descr-right-column">
             <dt class="slider-product-descr-term">Радиус поражения</dt>
             <dd class="slider-product-descr-data">50 м</dd>
+          </div>
+
         </dl>
         </div>
       </div>
@@ -183,27 +193,24 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="product-categories-list">
         <li class="product-categories-list-item">
-            <a class="product-categories-list-link" href="#">Виртуальная реальность
-            </a><!-- Изображение будет через background image -->
+            <a class="product-categories-list-link product-categories-bg-1" href="#">Виртуальная реальность</a>
         </li>
         <li class="product-categories-list-item">
-          <a class="product-categories-list-link" href="Catalog.html">Моноподы для селфи
+          <a class="product-categories-list-link product-categories-bg-2" href="Catalog.html">Моноподы<br> для селфи</a>
+        </li>
+        <li class="product-categories-list-item">
+          <a class="product-categories-list-link product-categories-bg-3" href="#">Экшн-камеры</a>
+        </li>
+        <li class="product-categories-list-item">
+          <a class="product-categories-list-link product-categories-bg-4" href="#">Фитнес-браслеты
           </a>
         </li>
         <li class="product-categories-list-item">
-          <a class="product-categories-list-link" href="#">Экшн-камеры
+          <a class="product-categories-list-link product-categories-bg-5" href="#">Умные часы
           </a>
         </li>
         <li class="product-categories-list-item">
-          <a class="product-categories-list-link" href="#">Фитнес-браслеты
-          </a>
-        </li>
-        <li class="product-categories-list-item">
-          <a class="product-categories-list-link" href="#">Умные часы
-          </a>
-        </li>
-        <li class="product-categories-list-item">
-          <a class="product-categories-list-link" href="#">Квадрокоптеры
+          <a class="product-categories-list-link product-categories-bg-6" href="#">Квадрокоптеры
           </a>
         </li>
       </ul>

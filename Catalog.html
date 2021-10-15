@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="page-header"> <!--Шапка-->
-    <div class="container">
+    <div class="container page-header-container">
     <a href="index.html" class="header-logo">
       <img class="header-logo-img" src="img/header_logo.svg" width="145" height="36" alt="Логотип device">
     </a>
@@ -27,9 +27,6 @@
         <a class="user-nav-link user-nav-link-out" href="#">Выйти</a>
       </li>
       <li class="user-nav-list-item">
-        <a class="user-nav-link" href="#">Войти</a>
-      </li>
-      <li class="user-nav-list-item">
         <a class="user-nav-link" href="#">Сравнить</a>
       </li>
       <li class="user-nav-list-item">
@@ -39,7 +36,7 @@
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li class="main-nav-list-item main-nav-sub-menu"> <!--Выпадающее меню-->
-          <a class="main-nav-sub-menu-link" href="#">Каталог товаров</a>
+          <a class="main-nav-list-link main-nav-sub-menu-link" href="#">Каталог товаров</a>
           <ul class="main-nav-sub-menu-list visually-hidden"> <!--Скрыто-->
             <li class="main-nav-sub-menu-item">
               <a class="main-nav-sub-menu-link" href="#">Виртуальная реальность</a>
@@ -67,14 +64,14 @@
         <li class="main-nav-list-item">
           <a class="main-nav-list-link" href="#">Гарантия</a>
         </li>
-        <li class="main-nav-list-item">
+        <li class="main-nav-list-item main-nav-list-contacts">
           <a class="main-nav-list-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
     </div>
   </header>
-  <main class="catalog-main"> <!--Главное содержимое-->
+  <main class="catalog-main main-container"> <!--Главное содержимое-->
     <header class="catalog-header container">
       <h1 class="page-title catalog-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs-list">
