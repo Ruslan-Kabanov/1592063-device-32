@@ -218,7 +218,7 @@
     <section class="services"> <!--Услуги-->
       <h2 class="visually-hidden">Услуги</h2>
       <div class="services-slider container">
-      <div class="services-slide-1-left-column">
+      <div class="services-slide-left-column">
       <ul class="services-slide-list">
         <li class="services-slide-list-item">
           <button class="button services-button services-button-current" type="button">Доставка</button>
@@ -231,12 +231,12 @@
         </li>
       </ul>
       </div>
-      <div class="services-slide-1-right-column">
+      <div class="services-slide-right-column">
         <h2 class="page-title services-title">Доставка</h2>
           <p class="services-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
       </div>
-      <div class="services-slider container visually-hidden"> <!--Скрыто-->
+      <div class="services-slider container visually-hidden"> <!--Скрыто + Сменить классы-->
         <div class="services-slide-2-left-column">
         <ul class="services-slide-list">
           <li class="services-slide-list-item">
@@ -278,8 +278,10 @@
     <section class="about-us container"> <!--О компании-->
       <h2 class="visually-hidden">О компании</h2>
       <header class="about-us-header">
-        <a class="about-us-header-link" href="">Доставим редкий товар под заказ</a>
-        <span>i</span>
+        <a class="about-us-header-link" href="">Доставим редкий товар под заказ
+          <span>i</span>
+        </a>
+
       </header>
       <div class="about-us-inner">
       <div class="about-us-left-column">
@@ -302,9 +304,9 @@
           <a class="tel" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
         </address>
         <h3 class="work-time-title">Время работы</h3>
-        <ul class="work-time-list-item">
+        <ul class="work-time-list">
           <li class="work-time-list-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="work-time-list">сб—вс: с 10:00 до 19:00</li>
+          <li class="work-time-list-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
         <a class="button contacts-button" href="#">Напишите нам</a>
       </div>
@@ -313,8 +315,8 @@
     <section class="mailing"> <!--Рассылка-->
       <h2 class="visually-hidden">Подписаться на рассылку</h2>
       <div class="mailing-title-section container">
-        <h2 class="page-title mailing-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <h2 class="page-title mailing-title">Подпишитесь<br> на рассылку</h2>
+        <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
       </div>
       <div class="mailing-form container">
         <form action="https://echo.htmlacademy.ru/" method="POST">
@@ -329,7 +331,7 @@
     <footer class="main-footer"> <!--Подвал-->
       <div class="main-footer-inner container">
         <div class="main-footer-left-column">
-          <a href="index.html">
+          <a class="main-footer-logo" href="index.html">
             <img src="img/footer_logo.svg" width="145" height="36" alt="Логотип device"></a>
               <address>
                 <p class="main-footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -349,18 +351,18 @@
         </ul>
         <ul class="social-link-list">
           <li>
-            <a href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidde">facebook</span> <!--Скрыто-->
+            <a class="social-link-list-icon fb-link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">facebook</span> <!--Скрыто-->
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidde">instagram</span> <!--Скрыто-->
+            <a class="social-link-list-icon insta-link" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">instagram</span> <!--Скрыто-->
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidde">twitter</span> <!--Скрыто-->
+            <a class="social-link-list-icon twit-link" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">twitter</span> <!--Скрыто-->
             </a>
           </li>
         </ul>
