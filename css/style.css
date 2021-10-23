@@ -46,6 +46,7 @@ body{
   color: #000000;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   min-height: 100%;
 }
@@ -87,6 +88,7 @@ body{
   font-size: 16px;
   line-height: 19px;
   background: linear-gradient(0deg, rgb(255, 225, 127) 82%, rgb(255, 255, 255) 50%);
+
   padding-top: 17px;
   padding-bottom: 39px;
 }
@@ -219,6 +221,8 @@ body{
 .slider{
   background: linear-gradient(0deg, rgb(255, 255, 255) 74%, rgb(255, 225, 127) 50%);
   /* outline: 1px solid red; */
+  position: relative;
+  top:-40px;
 }
 
 .slider-1{
@@ -226,18 +230,20 @@ body{
 }
 
 .slider-img{
-  width: 560px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .slider-right-column{
-  width: 570px;
+  width: 560px;
   position: relative;
   z-index: 2;
   padding-top: 125px;
 }
 
 .slider-left-column{
-  margin-right: 10px;
+  margin-right: 40px;
 }
 .slide-number{
   font-weight: 800;
@@ -344,7 +350,7 @@ body{
 /*Категории товаров*/
 
 .product-categories{
-  padding: 35px 0 40px;
+  padding: 0 0 40px;
 }
 
 .product-categories-list-link{
@@ -394,16 +400,15 @@ body{
 
 .product-categories-list{
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   padding: 0;
   margin: 0;
-  margin-right: -70px;
+  grid-template-columns: repeat(6, 160px);
+  column-gap: 40px;
 }
 
 .product-categories-list-item{
   width: 160px;
-  margin-right: 40px;
   margin-bottom: 40px;
 }
 
