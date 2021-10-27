@@ -17,26 +17,28 @@
         <li class="user-nav-list-item user-nav-search">
           <form class="user-nav-form" action="https://echo.htmlacademy.ru/" method="GET">
             <input class="user-nav-form-input" type="text" name="search" placeholder="Поиск по сайту">
-            <button class="user-nav-form-button visually-hidden" type="submit">Найти</button> <!--Кнопка по умолчанию скрыта-->
+            <button class="user-nav-form-button" type="submit">Найти</button> <!--Кнопка по умолчанию скрыта-->
           </form>
         </li>
         <li class="user-nav-list-item">
-          <a class="user-nav-link" href="#">Войти</a>
+          <a class="user-nav-link user-nav-link-enter" href="#">Войти</a>
         </li>
         <li class="user-nav-list-item user-nav-list-item-out"> <!--Скрыта при не активном профиле посетителя-->
           <a class="user-nav-link user-nav-link-out" href="#">Выйти</a>
         </li>
         <li class="user-nav-list-item">
-          <a class="user-nav-link" href="#">Сравнить</a>
+          <a class="user-nav-link user-nav-link-compare" href="#">Сравнить</a>
         </li>
         <li class="user-nav-list-item">
-          <a class="user-nav-link" href="#">Корзина</a>
+          <a class="user-nav-link user-nav-link-cart" href="#">Корзина
+            <span class="items-in-the-cart">2</span>
+          </a>
         </li>
       </ul>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list-item main-nav-sub-menu"> <!--Выпадающее меню-->
-            <a class="main-nav-list-link main-nav-sub-menu-link" href="#">Каталог товаров</a>
+            <a class="main-nav-sub-menu-link" href="#">Каталог товаров</a>
             <ul class="main-nav-sub-menu-list visually-hidden"> <!--Скрыто-->
               <li class="main-nav-sub-menu-item">
                 <a class="main-nav-sub-menu-link" href="#">Виртуальная реальность</a>
