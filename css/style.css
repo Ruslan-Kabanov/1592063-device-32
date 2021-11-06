@@ -1355,16 +1355,31 @@ position: relative;
 
 /* Фильтры */
 
+.products{
+  position: relative;
+  background: linear-gradient(90deg, rgb(235, 235, 235) 30%, rgb(255, 255, 255) 30%);
+  z-index: 2;
+}
+.products-inner{
+  display: flex;
+}
+
+.product-filters-group{
+  margin-bottom: 45px;
+}
+
 .product-filters{
-  background: linear-gradient(180deg, #DCDCDC 6%, rgb(255, 255, 255) 5%);
   width: 328px;
   padding-left: 60px;
-  padding-top: 24px;
+  position: relative;
+  background-color: #EBEBEB;
+  z-index: 1;
 }
 
 .product-filters-checkbox-list-item{
   list-style-type: none;
 }
+
 .product-filters-title, .product-cards-title{
   font-family: Raleway sans-serif;
   font-style: normal;
@@ -1374,7 +1389,24 @@ position: relative;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  position: relative;
+}
+
+.product-filters-title-wrapper{
+  padding-top: 25px ;
+  margin-bottom: 96px;
+}
+
+.product-filters-title-wrapper::after, .product-cards-header::after{
+  content: "";
+  width: 100vw;
+  height: 70px;
+  background-color: #DCDCDC;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .product-cards-title{
@@ -1398,14 +1430,39 @@ position: relative;
 .product-filters-radio-btn-list-item{
   list-style-type: none;
 }
+
+.product-filters-form-button{
+  min-width: 160px;
+  padding: 10px 25px;
+  border: none;
+  background: linear-gradient(180deg, rgba(255,255,255, 0) 42%, rgba(255, 199, 0, 1) 42%, rgba(255, 199, 0, 1) 57%, rgba(255,255,255,0) 57%);
+  cursor: pointer;
+}
+
+.product-filters-form-button:hover{
+ background: #FFC700;
+}
+
+.product-filters-form-button:focus{
+ outline: none;
+ background: linear-gradient(180deg, rgba(255,255,255,0) 42%, rgba(175, 79, 255, 1) 42%, rgba(175, 79, 255, 1) 57%, rgba(255,255,255,0) 57%);
+}
+
+.product-filters-form-button:active{
+  color: rgba(0, 0, 0, .3);
+  background: #FFC700;
+}
 /* Карточки товаров */
 
 .product-cards-header{
   display: flex;
   align-items: center;
   padding-top: 23px;
-  padding-left: 63px;
   padding-bottom: 25px;
+}
+
+.product-cards-header::after{
+  background-color: #EBEBEB;
 }
 
 .product-cards-sorting-arrow{
@@ -1457,22 +1514,10 @@ position: relative;
   pointer-events: none;
 }
 
-.products{
-  background: linear-gradient(90deg, rgb(235, 235, 235) 25%, rgb(255, 255, 255) 5%);
-}
-.products-inner{
-  display: flex;
-  outline: 1px solid blue;
-}
-
-.product-filters-group{
-  margin-bottom: 45px;
-}
-
 .product-cards-section{
-  background: linear-gradient(180deg, rgb(235, 235, 235) 6%, rgb(255, 255, 255) 5%);
-  width: 972px;
-  padding-left: 72px;
+  background: linear-gradient(180deg, rgb(235, 235, 235) 5%, rgb(255, 255, 255) 5%);
+  width: 840px;
+  padding-left: 75px;
   padding-bottom: 77px;
 }
 
@@ -1520,7 +1565,6 @@ position: relative;
   position: relative;
 }
 
-
 .product-cards-list-item-img{
   width: 100%;
   height: auto;
@@ -1542,15 +1586,29 @@ position: relative;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   display: none;
-  padding: 170px 90px;
 }
 
-  .product-cards-list-link{
+.product-cards-list-link{
   padding: 10px 15px;
   background: linear-gradient(180deg, rgba(255,255,255,0) 42%, rgba(255, 199, 0, 1) 42%, rgba(255, 199, 0, 1) 57%, rgba(255,255,255,0) 57%);
-  width: 175px;
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-product{
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/New.svg);
+  position: absolute;
+  top: 27px;
+  right: 27px ;
 }
 
  .product-card-title:focus + .product-card-price{
@@ -1567,17 +1625,24 @@ position: relative;
   outline: none;
 }
 
-.product-cards-list-item-img:hover + .product-cards-list-link-wrapper{
+.product-cards-list-item:hover .product-cards-list-link-wrapper{
   display: block;
 }
 
 .product-cards-list-link:hover{
   background: #FFC700;
-  border: 5px solid #AF4FFF;
 }
 
 .product-cards-list-link:active{
   color: rgba(0, 0, 0, .3);
+}
+
+.product-cards-list-item:hover .new-product{
+  opacity: .3;
+}
+
+.new-product-hidden{
+  display: none;
 }
 
 /* Пагаинация */
@@ -1594,7 +1659,7 @@ position: relative;
 
 .product-cards-pagination-list-item{
   list-style-type: none;
-  margin: 0 30px;
+  margin: 0 10px;
 }
 
 .product-cards-pagination-link-back{
@@ -1615,7 +1680,7 @@ position: relative;
 .products-catalog-button{
   width: 760px;
   height: 55px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   border: none;
   background-color: transparent;
   border: 3px solid rgba(0, 0, 0, .1);
