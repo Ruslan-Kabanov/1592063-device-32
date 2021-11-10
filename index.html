@@ -38,26 +38,34 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list-item main-nav-sub-menu"> <!--Выпадающее меню-->
-            <a class="main-nav-sub-menu-link" href="#">Каталог товаров</a>
-            <ul class="main-nav-sub-menu-list visually-hidden"> <!--Скрыто-->
-              <li class="main-nav-sub-menu-item">
-                <a class="main-nav-sub-menu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="main-nav-sub-menu-item">
-                <a class="main-nav-sub-menu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="main-nav-sub-menu-item">
-                <a class="main-nav-sub-menu-link" href="#">Квадрокоптеры</a>
-              </li>
-              <li class="main-nav-sub-menu-item">
-                <a class="main-nav-sub-menu-link" href="Catalog.html">Моноподы для cелфи</a>
-              </li>
-              <li class="main-nav-sub-menu-item">
-                <a class="main-nav-sub-menu-link" href="#">Умные часы</a>
-              </li>
-              <li class="main-nav-sub-menu-item">
-                <a class="main-nav-sub-menu-link" href="#">Экшн-камеры</a>
-              </li>
+            <a class="main-nav-list-link main-nav-sub-menu-link-icon" href="#">Каталог товаров</a>
+            <ul class="main-nav-sub-menu-list">
+              <div class="main-nav-sub-menu-list-wrapper">
+                <div class="main-nav-sub-menu-item-wrapper">
+                  <li class="main-nav-sub-menu-item">
+                  <a class="main-nav-sub-menu-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="main-nav-sub-menu-item">
+                    <a class="main-nav-sub-menu-link" href="Catalog.html">Моноподы для cелфи</a>
+                  </li>
+                  <li class="main-nav-sub-menu-item">
+                    <a class="main-nav-sub-menu-link" href="#">Экшн-камеры</a>
+                  </li>
+                </div>
+                <div class="main-nav-sub-menu-item-wrapper">
+                  <li class="main-nav-sub-menu-item">
+                    <a class="main-nav-sub-menu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="main-nav-sub-menu-item">
+                    <a class="main-nav-sub-menu-link" href="#">Умные часы</a>
+                  </li>
+                </div>
+                <div class="main-nav-sub-menu-item-wrapper">
+                  <li class="main-nav-sub-menu-item">
+                    <a class="main-nav-sub-menu-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </div>
+              </div>
             </ul>
           </li>
           <li class="main-nav-list-item">
@@ -314,7 +322,9 @@
       <h2 class="visually-hidden">О компании</h2>
       <header class="about-us-header">
         <a class="about-us-header-link" href="#"><span>Доставим редкий товар под заказ</span>
-          <div class="about-us-header-link-info"></div>
+          <div class="about-us-header-link-info">
+            <span class="visually-hidden">Получить дополнительную информацию</span>
+          </div>
         </a>
       </header>
       <div class="about-us-inner">
@@ -413,4 +423,72 @@
       </div>
     </footer>
 </body>
+
+<!-- Попап корзины -->
+
+<div class="cart-popup">
+  <ul class="cart-popup-list">
+    <li class="cart-popup-list-item">
+      <a class="cart-popup-list-link" href="">
+        <img class="cart-popup-list-img" width="41" height="43" src="../img/product-1-small.jpg" alt="">
+        Любительская<br> селфи-палка</a>
+      <button class="cart-popup-list-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </li>
+    <li class="cart-popup-list-item">
+      <a class="cart-popup-list-link" href="">
+      <img class="cart-popup-list-img" width="41" height="43" src="../img/product-2-small.jpg" alt="">
+      Профессиональная<br> селфи-палка</a>
+      <button class="cart-popup-list-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </li>
+  </ul>
+  <div class="cart-popup-overall-price">
+    <span class="cart-popup-overall-price-goods-count">Товаров: 2</span>
+    <span class="cart-popup-overall-price-current">Сумма: 2000 ₽</span>
+  </div>
+  <a class="popup-cart-link" href="">Открыть корзину</a>
+</div>
+
+<!-- Модальное окно -->
+
+<div class="delivery-modal-window-container">
+  <div class="delivery-modal-window">
+    <h2 class="delivery-modal-window-title">Доставка под заказ</h2>
+    <button class="delivery-modal-window-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  <form class="delivery-modal-window-form" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="delivery-modal-window-form-inner inner-name">
+      <label class="delivery-modal-window-form-label" for="user-name-input">Ваше имя:</label>
+      <input class="delivery-modal-window-form-input input-name input-error" type="text" name="user-name" placeholder="Имя Фамилия" id="user-name-input">
+      <span class="input-name-required">Пожалуйста, представьтесь</span>
+    </div>
+    <div class="delivery-modal-window-form-inner inner-email">
+      <label class="delivery-modal-window-form-label" for="user-email-input">Ваш e-mail:</label>
+      <input class="delivery-modal-window-form-input input-error" type="email" name="user-email" placeholder="Введите e-mail" id="user-email-input">
+      <span class="input-email-descr">Забавный у вас адрес</span>
+    </div>
+    <div class="delivery-modal-window-form-inner inner-delivery">
+      <label class="delivery-modal-window-form-label" for="delivery-descr-input">Что нужно привезти:</label>
+      <input class="delivery-modal-window-form-input input-delivery input-error" type="text" name="delivery-description" id="delivery-descr-input" placeholder="В свободной форме">
+    </div>
+    <div class="delivery-modal-window-form-inner inner-count">
+      <label class="delivery-modal-window-form-label" for="delivery-count-input">Количество:</label>
+      <button class="delivery-modal-window-form-label-button" type="button">
+        <span class="visually-hidden">Посмотреть дополнительную информацию</span><div class="delivery-modal-window-form-label-button-popup">
+        <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</p>
+      </div>
+      </button>
+      <input class="delivery-modal-window-form-input input-count input-error" type="text" name="delivery-count" value="1" id="delivery-count-input">
+      <button  class="delivery-count delivery-count-minus" type="button"></button>
+      <button class="delivery-count delivery-count-plus" type="button"></button>
+    </div>
+    <button class="button delivery-modal-window-form-submit" type="submit">Отправить</button>
+  </form>
+  </div>
+</div>
 </html>
+
